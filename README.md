@@ -1,2 +1,4 @@
 # BayBibl
-Eine Oberfläche für die Bayerische Bibliographie
+
+Eine alternative Oberfläche für die momentane Bayerische Bibliographie.
+Prototyp unter https://www.aubib.de/BayBibl.html
