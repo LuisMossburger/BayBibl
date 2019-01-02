@@ -1,0 +1,702 @@
+/*
+
+#2c3033 (Dunkelgrau)
+#0583c1 (Dunkelblau)
+#095982 (noch dunkelblauer)
+#26b6ff (kräftigeres blau)
+#66ccff (ursprüngliches blau, eis)
+
+*/
+
+@font-face {
+
+    font-family: OpenSans;
+    src: url(Open_Sans/OpenSans-Regular.ttf);
+
+}
+
+@font-face {
+
+    font-family: OpenSansLight;
+    src: url(Open_Sans/OpenSans-Light.ttf);
+
+}
+
+@font-face {
+
+    font-family: OpenSansBold;
+    src: url(Open_Sans/OpenSans-Bold.ttf);
+
+}
+
+@font-face {
+
+    font-family: OpenSansItalic;
+    src: url(Open_Sans/OpenSans-Italic.ttf);
+
+}
+
+
+
+* {
+
+    font-family: "OpenSans", Arial;
+    color: #3b4044;
+
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+h2 {
+
+    font-family: "OpenSansLight";
+    font-size: 1.6em;
+
+}
+
+table {
+
+    border: none;
+
+}
+
+
+
+
+
+#Navi {
+
+    padding: 1em 4em;
+    border-bottom: 1px solid #bbb;
+    margin: 0;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    background-color: #fff;
+
+}
+
+.brand {
+
+    display: inline;
+    text-align: left;
+
+    font-family: "OpenSansLight";
+    font-weight: lighter;
+    font-size: 1.2em;
+    color: #444;
+
+}
+
+.brand a, .brand a:hover {
+
+    text-decoration: none;
+
+}
+
+.brand span {
+
+    font-family: "OpenSansBold";
+
+}
+
+.Unternavi {
+
+    margin-left: 3em;
+    display: inline;
+
+    color: #888;
+
+}
+
+.Unternavi a {
+
+    display: inline;
+
+    text-decoration: none;
+    font-size: 1em;
+    color: #888;
+
+}
+
+.Unternavi a:hover, .Unternavi a:focus {
+
+    color: #26b6ff;
+
+}
+
+.bvbLogo {
+
+    height: 1.5em;
+    width: auto;
+
+    position: fixed;
+    right: 4em;
+    top: 1em;
+    display: inline;
+
+}
+
+#SucheNavi {
+
+    position: fixed;
+    right: 15em;
+    top: 1em;
+
+}
+
+#SucheNaviInput, #SucheNaviSelect {
+
+  width: 7em;
+  padding: 0.3em 0.5em;
+  border: none;
+  border-radius: 1px;
+
+  font-size: 0.85em;
+  color: #666;
+
+  background-color: rgb(235, 235, 235);
+
+}
+
+#SucheNaviInput:hover {
+
+    background-color: rgb(220, 220, 220);
+
+}
+
+.erweiterteNaviSuche {
+
+    display: none;
+
+}
+
+.shadow {
+
+    box-shadow: 0em 0.3em 0.3em #bbb;
+
+}
+
+
+
+
+
+.start {
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    background: url("trianglify.svg") center center;
+    background-size: cover;
+    box-shadow: 0em 0.3em 0.3em #bbb;
+
+}
+
+#slogan {
+
+    padding: 1.5em 0em 0.5em 0em;
+    margin: 0;
+
+    font-family: "OpenSansLight";
+    font-weight: lighter;
+    font-size: 3em;
+
+}
+
+.Suchform {
+
+    margin: 0.3em 0em 1em 0em;
+
+    display: inline-block;
+    text-align: center;
+
+}
+
+.Suchform input, .Suchform select  {
+
+    padding: 0.3em;
+    border: none;
+    border-radius: 1px;
+
+    font-size: 0.95em;
+    color: #666;
+
+    background-color: rgb(235, 235, 235);
+
+}
+
+.Suchform input:hover, .Suchform input:focus {
+
+    background-color: rgb(220, 220, 220);
+
+}
+
+.Suchform input {
+
+    padding-left: 1.5em;
+    margin-right: 2.5em;
+
+}
+
+.Suchform .inputSmallMargin {
+
+    margin-right: 0.3em;
+
+ }
+
+.Suchform .inputBigMargin {
+
+    margin-right: 6.5em;
+
+ }
+
+.Suchform select {
+
+    width: 10em;
+
+}
+
+#select2 {
+
+    margin-left: 2.5em;
+
+}
+
+.erweitert {
+
+    display: none;
+
+}
+
+.erweitertZusatz, .erweitertZusatz * {
+
+    text-align: left;
+
+}
+
+
+
+
+
+.Suchform input.Button {
+
+    padding: 0.3em 0.5em;
+    margin-right: 0em;
+    margin-left: 0.5em;
+
+    text-align: center;
+
+    background-color: transparent;
+
+}
+
+.Suchform input.Button:hover {
+
+    cursor: pointer;
+
+    background-color: rgb(220, 220, 220);
+
+}
+
+p.Button {
+
+    font-size: 0.85em;
+
+}
+
+br.erweitert {
+
+    margin-top: 2em;
+
+}
+
+#erweiterteSucheButton {
+
+    margin-top: 8em;
+
+    text-align: center;
+
+    line-height: 2em;
+    font-size: 0.7em;
+
+}
+
+#arrow {
+
+    display: inline-block;
+
+    font-family: "OpenSansLight";
+    font-weight: lighter;
+    font-size: 3em;
+    -webkit-transform:scale(4,1); /* Safari and Chrome */
+    -moz-transform:scale(4,1); /* Firefox */
+    -ms-transform:scale(4,1); /* IE 9 */
+    -o-transform:scale(4,1); /* Opera */
+    transform:scale(4,1); /* W3C */
+
+}
+
+#erweiterteSucheButton:hover {
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+.startPanels {
+
+    display: inline-flex;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-width: 80%;
+
+    text-align: center;
+    z-index: -1;
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+.startPanel {
+
+    width: 33%;
+
+}
+
+.startPanel a, .startPanel a:hover {
+
+    text-decoration: none;
+
+}
+
+.startPanelHover:hover * {
+
+    color: #444;
+
+}
+
+.startPanel p {
+
+    padding: 0em 3em 1em 3em;
+
+    color: #888;
+
+}
+
+.UberschriftPanel {
+
+    font-family: "OpenSansLight";
+    font-size: 1.6em;
+    color: #888;
+
+}
+
+.RautePanel {
+
+    text-decoration: none;
+    font-family: "OpenSansLight";
+    font-size: 3em;
+    color: #888;
+
+}
+
+.RautePanel:hover {
+
+    color: #3b4044;
+
+}
+
+
+
+
+
+.Systematik {
+
+    padding: 3em 0em;
+
+    text-align: center;
+
+    background-color: rgb(250, 250, 250);
+
+}
+
+#SysEins ul {
+
+    margin-left: 30%;
+    padding: 0;
+
+    text-align: left;
+    list-style-type: none;
+
+}
+
+#SysEins li, #SysEins li ul li a {
+
+    padding: 1em;
+
+    font-family: "OpenSansBold";
+    color: #888;
+
+}
+
+#SysEins li:hover, #SysEins li ul li a:hover {
+
+    cursor: pointer;
+
+    color: #444;
+
+}
+
+#SysEins li ul li, #SysEins li ul li a {
+
+    padding: 0.2em;
+    margin-left: 2em;
+
+    font-size: 0.7em;
+    font-family: "OpenSans";
+
+}
+
+#SysEins li ul li span {
+
+    margin-left: -2em;
+
+}
+
+
+
+
+
+.Register {
+
+    padding: 3em 5%;
+
+    text-align: center;
+
+}
+
+.letter {
+
+    line-height: 2.5em;
+    font-size: 1.3em;
+    color: #888;
+
+    box-shadow: 0em 2em 0.5em -1.9em #ddd;
+
+}
+
+.letter span {
+
+    color: #888;
+
+}
+
+.letter span:hover, .letter span:focus {
+
+    cursor: pointer;
+
+    font-family: "OpenSansBold";
+    color: #444;
+}
+
+
+
+.RegisterLetter {
+
+    width: 100%;
+
+}
+
+.Register table * {
+
+    text-align: left;
+
+}
+
+.Register table {
+
+    width: 30em;
+
+    display: inline-table;
+
+}
+
+.tableRight {
+
+    margin-left: 5em;
+
+}
+
+.Register tr:nth-of-type(even) {
+
+    background-color: rgb(240, 240, 240);
+
+}
+
+.Register td {
+
+    padding: 0.3em;
+
+}
+
+.RegisterSys {
+
+    text-decoration: underline;
+
+}
+
+.RegisterSys:hover {
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+.Services {
+
+    padding: 3em 10%;
+
+    background-color: #3b4044;
+
+}
+
+.Services .startPanel p, .Services .startPanel h2 {
+
+    color: rgb(180, 180, 180);
+
+}
+
+.Services a, .Services span, .Services h2 {
+
+    color: #fff;
+
+}
+
+#DruckbaendeButton:hover {
+
+    cursor: pointer;
+
+}
+
+#Druckbaende {
+
+    padding: 3em 10%;
+
+    text-align: center;
+
+}
+
+
+
+
+
+.Partner {
+
+    padding: 3em 10%;
+
+    text-align: center;
+
+    background-color: rgb(250, 250, 250);
+
+}
+
+.Partner * {
+
+    text-decoration: none;
+    color: #3b4044;
+
+}
+
+.Partner ul {
+
+    list-style-type: none;
+
+}
+
+.Partner ul li {
+
+    padding: 0.5em;
+    border: 1px solid #3b4044;
+    border-radius: 4px;
+    margin: 1em 2em;
+
+    display: inline-block;
+
+}
+
+.Partner ul li:hover, .Partner ul li:focus, .Partner ul li:hover a, .Partner ul li:focus a {
+
+    color: #fff;
+    background-color: #3b4044;
+
+}
+
+
+
+
+
+.ueber {
+
+    padding: 3em 10%;
+
+    text-align: center;
+
+}
+
+.ueber ul {
+
+    margin-left: 8em;
+
+    text-align: left;
+
+}
+
+
+
+
+
+.Footer {
+
+    padding: 1em 4em;
+
+    background-color: #3b4044;
+
+}
+
+.FooterText {
+
+    text-align: center;
+    color: #eee;
+
+}
+
+.Footer a {
+
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.Footer a:hover {
+
+    color: #ddd;
+
+}
